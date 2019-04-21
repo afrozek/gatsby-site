@@ -1,0 +1,58 @@
+
+
+html, body, #___gatsby , div[role="group"][tabindex] {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+
+
+#nav-container {
+    background: #282B2D;
+
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        padding-top: 80px;
+    }
+    
+    .nav-link {
+        opacity: 0.5;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        transition: ease-in-out .3s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .navbar-brand {
+        color: white;
+        margin-right: 0;
+
+        h1 {
+            font-family: RobotoSlab-Regular;
+            font-size: 72px;
+            color: #FFFFFF;
+            letter-spacing: 1.96px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: RobotoSlab-Regular;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 1.96px;
+            text-align: center;
+        }
+    }
+}
