@@ -37,19 +37,23 @@ const Layout = ({ children }) => (
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav flex-column">
-              <li className="nav-item active">
-              <Link to="/about" className="nav-link">About</Link>              </li>
+              {/* <li className="nav-item active">
+                <Link to="/about" className="nav-link">About</Link>              
+              </li> */}
               <li className="nav-item">
               <Link to="/projects" className="nav-link">Projects</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/skillset">Skillset</Link>
-              </li>  
+              </li> 
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">Contact</Link>
+              </li>   
               <li className="nav-item mt-5">
-                <a className="nav-link" href="#"><img src={githubIcon} alt="github" /></a>
+                <a className="nav-link" href="https://github.com/afrozek" target="_blank"><img src={githubIcon} alt="github" /></a>
               </li>  
               <li className="nav-item">
-                <a className="nav-link" href="#"><img src={linkedinIcon} alt="linkedin" /></a>
+                <a className="nav-link" href="https://www.linkedin.com/in/afroze-khan-4b204294" target="_blank"><img src={linkedinIcon} alt="linkedin" /></a>
               </li> 
               {/* <li className="nav-item">
                 <a className="nav-link" href="#"><img src={dribbbleIcon} alt="dribbble" /></a>

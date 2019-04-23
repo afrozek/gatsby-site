@@ -34,14 +34,14 @@ export default () => {
             
             name: "Budget Manager",
             images: [budgetManager],
-            description: "Budget managing single page application",
+            description: "Budget managing single page application.",
             techStack: ['NodeJS', 'ExpressJS', 'Mongoose ORM', 'MongoDB','Angular 1.5','chartsJS']
         },
         {
             
             name: "Notecorner",
             images: [notecorner],
-            description: "App similar to Evernote for note taking ",
+            description: "App similar to Evernote for note taking. Main differences is that you can have multiple tabs and a grid layout. ",
             techStack: ['NodeJS', 'ExpressJS', 'Mongoose ORM', 'MongoDB','Angular 1.5', 'Bootstrap 3']
         },
         {            
@@ -59,7 +59,7 @@ export default () => {
         {            
             name: "NJ TETN LinkedIn Advertisement - NJ Department of Labor",
             images: [tetnAd],
-            description: "Web Advertisement made for NJ TETN to advertise on LinkedIn .",
+            description: "Paid Web Advertisement made for NJ TETN to advertise on LinkedIn .",
             techStack: ['Adobe Photoshop']
         },
         
