@@ -43,7 +43,7 @@ const Layout = ({ children }) => (
               <Link to="/projects" className="nav-link">Projects</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Skillset</a>
+                <Link className="nav-link" to="/skillset">Skillset</Link>
               </li>  
               <li className="nav-item mt-5">
                 <a className="nav-link" href="#"><img src={githubIcon} alt="github" /></a>
