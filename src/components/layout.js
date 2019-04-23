@@ -15,6 +15,10 @@ import "../styles/main.scss";
 
 import 'jquery/dist/jquery.min.js';
 // import "./layout.css"
+import { Link } from "gatsby";
+import githubIcon from '../images/github-icon.svg';
+import linkedinIcon from '../images/linkedin-icon.svg';
+import dribbbleIcon from '../images/dribbble-icon.svg';
 
 
 
@@ -23,10 +27,10 @@ const Layout = ({ children }) => (
     <div className="row h-100">
       <div id="nav-container" className="col-md-3 h-100">
         <nav className="navbar navbar-expand-lg navbar-light flex-column">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             <h1>AK</h1>
             <h2>Afroze Khan</h2>
-          </a>
+          </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -34,24 +38,28 @@ const Layout = ({ children }) => (
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav flex-column">
               <li className="nav-item active">
-                <a className="nav-link" href="#">About <span className="sr-only">(current)</span></a>
-              </li>
+              <Link to="/about" className="nav-link">About</Link>              </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Projects</a>
+              <Link to="/projects" className="nav-link">Projects</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Skillset</a>
               </li>  
+              <li className="nav-item mt-5">
+                <a className="nav-link" href="#"><img src={githubIcon} alt="github" /></a>
+              </li>  
               <li className="nav-item">
-                <a className="nav-link" href="#"><img src="/images/gatsby-icon.png" alt=""/></a>
-              </li>          
+                <a className="nav-link" href="#"><img src={linkedinIcon} alt="linkedin" /></a>
+              </li> 
+              {/* <li className="nav-item">
+                <a className="nav-link" href="#"><img src={dribbbleIcon} alt="dribbble" /></a>
+              </li>          */}
             </ul>
           </div>
         </nav>
       </div>
-      <div className="col-md-9">
+      
         {children}
-      </div>
     </div>
   </div>
 )
