@@ -2,6 +2,10 @@ import React from "react";
 import Layout from "../components/layout"
 import notecorner from '../images/notecornerdemo.gif';
 import budgetManager from '../images/budgetManager.gif';
+import lanternLogin from '../images/lantern-guides-login.png';
+import lanternDashboard from '../images/lantern-guides-dashboard.svg'
+import sogCreateOrbit from '../images/sog-create-orbit.gif';
+import sogCreateVolume from '../images/sog-create-volume.gif';
 
 
 export default () => {
@@ -9,8 +13,15 @@ export default () => {
     const items = [
         {
             
+            name: "Lantern Technical Guides Workflow",
+            images: [lanternDashboard, lanternLogin],
+            description: "React SPA to publish guides in markdown. Work in progress.",
+            techStack: ['Webpack', 'React', 'Redux Thunk', 'nodeJS', 'ExpressJS', 'Mongoose ORM', 'MongoDB', 'Sketch']
+        },
+        {
+            
             name: "Cloud IAAS SPA",
-            images: [budgetManager, notecorner],
+            images: [sogCreateOrbit, sogCreateVolume],
             description: "Created Cloud service SPA from UI handoff. Features included auth checks, billing module, compute resource creation and more. ",
             techStack: ['NodeJS', 'ExpressJS', 'Mongoose ORM', 'MongoDB','Angular 1.5','c3 Charts', 'socket.io']
         },
@@ -25,18 +36,18 @@ export default () => {
             
             name: "Notecorner",
             images: [notecorner],
-            description: "App similar to Evernote for note taking. ",
+            description: "App similar to Evernote for note taking ",
             techStack: ['NodeJS', 'ExpressJS', 'Mongoose ORM', 'MongoDB','Angular 1.5', 'Bootstrap 3']
         }
     ]
 
-    const projectList = items.map(project => {
+    const projectList = items.map((project, index) => {
         return (
-            <div className="row project-row m-b-100" key={project.id}>
+            <div className="row project-row m-b-100" key={index}>
                 <div className="col-md-12">
                     <div>
                         <span className="project-id">
-                            {project.id}
+                            {'0' + (index + 1) + '.'}
                         </span>
                     </div>
                     <h2>{project.name}</h2>
