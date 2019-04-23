@@ -10,6 +10,8 @@ import sogCreateVolume from '../images/sog-create-volume.gif';
 import tetnBrochure from '../images/tetnBrochure.png';
 import tetnAd from '../images/tetnAd.png';
 
+import SEO from "../components/seo";
+
 
 
 
@@ -107,6 +109,8 @@ export default () => {
 
     return (
         <Layout>
+        <SEO title="Home" keywords={[`Afroze Khan`, `Projects`]} />
+
             <div id="projects-page" className="col-md-9 p-l-100 p-r-100 inner-page">
                 <div className="row m-t-75"> 
                     <div className="col-md-12">
