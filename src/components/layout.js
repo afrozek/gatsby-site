@@ -11,9 +11,9 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 
-import $ from 'jquery/dist/jquery.min' // importing this worked like a charm// import "./layout.css"
+import 'jquery/dist/jquery.min' // importing this worked like a charm// import "./layout.css"
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap';
+import 'bootstrap/dist/js/bootstrap';
 import "../styles/main.scss";
 
 import { Link } from "gatsby";
