@@ -37,12 +37,84 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   }
 }
 
+/*
+* Media queries
+*/
 
+@mixin smallPhone {
+    @media (max-width: #{320px}  ) {
+      @content;
+    } 
+  }
+  
+  
+  
+  
+  
+  @mixin phone {
+    @media (max-width: #{420px - 1px}  ) {
+      @content;
+    } 
+  }
+  
+  
+  @mixin device600 {
+    @media (max-width: #{600px - 1px}  ) {
+      @content;
+    } 
+  }
+  
+  @mixin largePhone {
+    @media (max-width: #{768px - 1px}  ) {
+      @content;
+    } 
+  }
+  
+  
+  @mixin tablet {
+    @media (max-width: #{992px - 1px}  ) {
+      @content;
+    } 
+  }
+  
+  
+  
+  @mixin desktop {
+    @media (max-width: #{1200px - 1px} ) {
+      @content;
+    } 
+  }
+  
+  
+  @mixin largeDesktop {
+    @media (max-width: #{1600px - 1px} ) {
+      @content;
+    } 
+  }
+  
+  
+  @mixin extraLargeDesktop {
+    @media (max-width: #{1920px - 1px} ) {
+      @content;
+    } 
+  }
+  
+  @mixin retina {
+    @media (min-width: 1920px ) {
+      @content;
+    } 
+  }
+  
 
+/* Custom CSS */
 
 
 #nav-container {
-    background: #282B2D;
+    background-color: #282B2D;
+    background-image: url('../images/afroze-bg-left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .navbar {
         text-align: center;
@@ -50,6 +122,10 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
     .navbar-nav {
         padding-top: 80px;
+
+        @include largePhone {
+            padding-top: 30px;
+        }
     }
     
     .nav-link {
@@ -90,6 +166,17 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     background: #252525;
     color: white;
 }
+
+#home-page {
+    height: 100%;
+    overflow: scroll;
+    background-color: #282B2D;
+    background-image: url('../images/afroze-bg-home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 #projects-page {
     height: 100%;
@@ -140,4 +227,5 @@ hr {
         height: auto;
     }
 }
+
 

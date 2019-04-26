@@ -17,10 +17,10 @@ export default () => {
                     </div>
                 </div>
                 <div className="m-t-50">
-                    <div class="row ">
+                    <div className="row ">
 
 
-                        <div class="col-md-4">
+                        <div className="col-md-4">
                             <h2>Development</h2>
                             <ul>
                                 <li>React Redux (In Progress)</li>
@@ -45,7 +45,7 @@ export default () => {
                             <li>Gulp</li>
                         </div>
 
-                        <div class="col-md-4">
+                        <div className="col-md-4">
                             <h2>DevOps</h2>
                             <ul>
                                 <li>Docker Swarm</li>
@@ -62,7 +62,7 @@ export default () => {
 
                     </div>
                     <div className="row m-t-30 m-b-100">
-                    <div class="col-md-4">
+                    <div className="col-md-4">
                             <h2>UI/UX</h2>
                             <ul>
                                 <li>Sketch App</li>

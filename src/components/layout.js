@@ -10,11 +10,12 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+
+import $ from 'jquery/dist/jquery.min' // importing this worked like a charm// import "./layout.css"
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap';
 import "../styles/main.scss";
 
-import 'jquery/dist/jquery.min.js';
-// import "./layout.css"
 import { Link } from "gatsby";
 import githubIcon from '../images/github-icon.svg';
 import linkedinIcon from '../images/linkedin-icon.svg';
@@ -25,8 +26,8 @@ import dribbbleIcon from '../images/dribbble-icon.svg';
 const Layout = ({ children }) => (
   <div className="container-fluid h-100">
     <div className="row h-100">
-      <div id="nav-container" className="col-md-3 h-100">
-        <nav className="navbar navbar-expand-lg navbar-light flex-column">
+      <div id="nav-container" className="col-md-3">
+        <nav className="navbar navbar-expand-lg navbar-dark flex-column">
           <Link className="navbar-brand" to="/">
             <h1>AK</h1>
             <h2>Afroze Khan</h2>
@@ -37,9 +38,9 @@ const Layout = ({ children }) => (
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav flex-column">
-              {/* <li className="nav-item active">
-                <Link to="/about" className="nav-link">About</Link>              
-              </li> */}
+              <li className="nav-item active">
+                <Link to="/" className="nav-link">Home</Link>              
+              </li>
               <li className="nav-item">
               <Link to="/projects" className="nav-link">Projects</Link>
               </li>
@@ -49,7 +50,7 @@ const Layout = ({ children }) => (
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">Contact</Link>
               </li>   
-              <li className="nav-item mt-5">
+              <li className="nav-item mt-md-5">
                 <a className="nav-link" href="https://github.com/afrozek" target="_blank"><img src={githubIcon} alt="github" /></a>
               </li>  
               <li className="nav-item">
