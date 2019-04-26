@@ -116,6 +116,10 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     background-repeat: no-repeat;
     background-size: cover;
 
+    @include largePhone {
+        background-image: none;
+    }
+
     .navbar {
         text-align: center;
     }
@@ -172,9 +176,21 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     overflow: scroll;
     background-color: #282B2D;
     background-image: url('../images/afroze-bg-home.png');
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+
+    h1 {
+        opacity: 0.73;
+        font-family: RobotoSlab-Regular;
+        font-size: 32px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+    }
+
+    // @include largePhone {
+
+    // }
 }
 
 

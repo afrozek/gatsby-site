@@ -25,9 +25,9 @@ export default () => {
         <SEO title="Home" keywords={[`Afroze Khan`, `Projects`]} />
 
             <div id="home-page" className="col-md-9 p-l-100 p-r-100 inner-page">
-                <div className="row m-t-75"> 
+                <div className="row align-items-md-center d-flex h-100"> 
                     <div className="col-md-12">
-                        <h1 className="mt-5">The Offical Website of Afroze Khan <br/> Web Developer<br/>& Designer</h1>
+                        <h1 className="mt-5">The Official Website of Afroze Khan <br/> Web Developer<br/>& Designer</h1>
                     </div>                    
                 </div>
                 
