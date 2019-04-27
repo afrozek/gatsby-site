@@ -110,11 +110,12 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
 
 #nav-container {
-    background-color: #282B2D;
+    background-color: #232323;
     background-image: url('../images/afroze-bg-left.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-right: 1px solid #464646;
 
     @include largePhone {
         background-image: none;
