@@ -104,6 +104,11 @@ $sides: (top, bottom, left, right); // Leave this variable alone
       @content;
     } 
   }
+
+
+  .scroll-touch {
+    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+  }
   
 
 /* Custom CSS */
@@ -170,6 +175,8 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 .inner-page {
     background: black;
     color: white;
+    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+
 }
 
 #home-page {

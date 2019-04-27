@@ -111,7 +111,7 @@ export default () => {
         <Layout>
         <SEO title="Home" keywords={[`Afroze Khan`, `Projects`]} />
 
-            <div id="projects-page" className="col-md-9 p-l-100 p-r-100 inner-page">
+            <div id="projects-page" className="col-md-9 pl-md-5 pr-md-5 inner-page">
                 <div className="row m-t-75"> 
                     <div className="col-md-12">
                         <h1>Projects</h1>
