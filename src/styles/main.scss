@@ -175,13 +175,15 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     height: 100%;
     overflow: scroll;
     background-color: #282B2D;
-    background-image: url('../images/afroze-bg-home.png');
+    // background-image: url('../images/afroze-bg-home.png');
+    background-image: url('../images/afroze-portrait.png');
+
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
 
     h1 {
-        opacity: 0.73;
+        // opacity: 0.73;
         font-family: RobotoSlab-Regular;
         font-size: 32px;
         color: #FFFFFF;
