@@ -54,7 +54,7 @@ const Layout = ({ children }) => (
                 <a className="nav-link" href="https://github.com/afrozek" target="_blank"><img src={githubIcon} alt="github" /></a>
               </li>  
               <li className="nav-item">
-                <a className="nav-link" href="https://www.linkedin.com/in/afroze-khan-4b204294" target="_blank"><img src={linkedinIcon} alt="linkedin" /></a>
+                <a className="nav-link" href="https://www.linkedin.com/in/afroze-khan" target="_blank"><img src={linkedinIcon} alt="linkedin" /></a>
               </li> 
               {/* <li className="nav-item">
                 <a className="nav-link" href="#"><img src={dribbbleIcon} alt="dribbble" /></a>
