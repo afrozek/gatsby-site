@@ -11,6 +11,8 @@ import tetnBrochure from '../images/tetnBrochure.png';
 import tetnAd from '../images/tetnAd.png';
 
 import SEO from "../components/seo";
+import { SRLWrapper } from "simple-react-lightbox";
+
 
 
 
@@ -82,9 +84,7 @@ export default () => {
                         {
                             project.images.map( (image, index) => {
                                 return (
-                                    <a key={index} href={image} target="_blank">
                                         <img className="scroll-image" src={image} alt="Budget Manager"/>
-                                    </a>
                                 )
                             }
                             )
@@ -118,7 +118,9 @@ export default () => {
                     </div>                    
                 </div>
                 <div className="m-t-50">
+                <SRLWrapper>
                 {projectList}
+                </SRLWrapper>
                 </div>
             </div>
         </Layout>
