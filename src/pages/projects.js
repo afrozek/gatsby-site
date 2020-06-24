@@ -84,7 +84,10 @@ export default () => {
                         {
                             project.images.map( (image, index) => {
                                 return (
-                                        <img className="scroll-image" src={image} alt="Budget Manager"/>
+                                        <div className="image-container"
+                                        style ={ { backgroundImage: "url("+image+")" } } >
+                                            <img className="image" src={image} alt={project.description}/>
+                                        </div>
                                 )
                             }
                             )

@@ -27,7 +27,7 @@ import linkedinIcon from '../images/linkedin-icon.svg';
 
 const Layout = ({ children }) => (
   <SimpleReactLightbox>
-  <div id="site-wrapper" className="container">
+  <div className="container-fluid h-100">
     <div className="row h-100">
       <div id="nav-container" className="col-md-3">
         <nav className="navbar navbar-expand-lg navbar-dark flex-column">
