@@ -5,8 +5,9 @@ html, body, #___gatsby , div[role="group"][tabindex] {
 }
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', serif;
     -webkit-font-smoothing: antialiased;
+    font-size: 12px;
 }
 
 /*
@@ -114,13 +115,27 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 /* Custom CSS */
 
 
+body {
+  background: white;
+}
+
+#site-wrapper {
+  height: 90%;
+  border-radius: 10px;
+  overflow:hidden;
+  position: relative;
+  top: 5%;
+  box-shadow: 0px 0px 57px 0px #616161;
+}
+
 #nav-container {
-    background-color: #232323;
-    // background-image: url('../images/afroze-bg-left.png');
+  background-color: #121212;
+  // background-image: url('../images/afroze-bg-left.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-right: 1px solid #464646;
+    // border-right: 1px solid #464646;
+    border-right: 1px solid #1d1d1d;
 
     @include largePhone {
         background-image: none;
@@ -140,9 +155,9 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     
     .nav-link {
         opacity: 0.5;
-        font-size: 18px;
+        font-size: 12px;
         color: #FFFFFF;
-        letter-spacing: 0;
+        letter-spacing: 2px;
         transition: ease-in-out .3s;
 
         &:hover {
@@ -173,7 +188,7 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 }
 
 .inner-page {
-    background: black;
+    background: #121212;
     color: white;
     -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
 
@@ -182,7 +197,7 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 #home-page {
     height: 100%;
     overflow: scroll;
-    background-color: #282B2D;
+    background-color: #0c0c0c;
     // background-image: url('../images/afroze-bg-home.png');
     // background-image: url('../images/afroze-portrait-optimized.png');
 

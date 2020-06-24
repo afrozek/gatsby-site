@@ -24,7 +24,7 @@ import dribbbleIcon from '../images/dribbble-icon.svg';
 
 
 const Layout = ({ children }) => (
-  <div className="container-fluid h-100">
+  <div id="site-wrapper" className="container">
     <div className="row h-100">
       <div id="nav-container" className="col-md-3">
         <nav className="navbar navbar-expand-lg navbar-dark flex-column">
