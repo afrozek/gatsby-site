@@ -49,6 +49,7 @@ export default () => {
                             <h2>DevOps</h2>
                             <ul>
                             <li>AWS</li>
+                            <li>Circle CI</li>
                                 <li>Docker Swarm</li>
                                 <li>Nginx</li>
                                 <li>Digital Ocean</li>
