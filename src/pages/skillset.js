@@ -48,14 +48,13 @@ export default () => {
                         <div className="col-md-4">
                             <h2>DevOps</h2>
                             <ul>
+                            <li>AWS</li>
                                 <li>Docker Swarm</li>
                                 <li>Nginx</li>
                                 <li>Digital Ocean</li>
                                 <li>Linode</li>
                                 <li>Vultr</li>
                                 <li>RedHat OpenShift(outdated)</li>
-                                <li>AWS Lightsail</li>
-                                <li>AWS(outdated)</li>
                             </ul>
                         </div>
 
