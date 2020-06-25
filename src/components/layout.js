@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+// import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 
@@ -15,15 +15,18 @@ import 'jquery/dist/jquery.min' // importing this worked like a charm// import "
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
 import "../styles/main.scss";
+import SimpleReactLightbox from "simple-react-lightbox";
+
 
 import { Link } from "gatsby";
 import githubIcon from '../images/github-icon.svg';
 import linkedinIcon from '../images/linkedin-icon.svg';
-import dribbbleIcon from '../images/dribbble-icon.svg';
+// import dribbbleIcon from '../images/dribbble-icon.svg';
 
 
 
 const Layout = ({ children }) => (
+  <SimpleReactLightbox>
   <div className="container-fluid h-100">
     <div className="row h-100">
       <div id="nav-container" className="col-md-3">
@@ -67,6 +70,7 @@ const Layout = ({ children }) => (
         {children}
     </div>
   </div>
+  </SimpleReactLightbox>
 )
 
 Layout.propTypes = {
