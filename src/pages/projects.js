@@ -151,19 +151,19 @@ export default () => {
         "Photoshop",
       ],
     },
-    {
-        name: "Space Kernel",
-        images: [
-          {
-            alt: "",
-            src: spaceKernelDash,
-          },
-        ],
-        demoLink: null,
-        description:
-          "SpaceX inspired dashboard to launch vms. Spaceship created in photoshop",
-        techStack: ["Photoshop", "Affinity Designer"],
-      },
+    // {
+    //     name: "Space Kernel",
+    //     images: [
+    //       {
+    //         alt: "",
+    //         src: spaceKernelDash,
+    //       },
+    //     ],
+    //     demoLink: null,
+    //     description:
+    //       "SpaceX inspired dashboard to launch vms. Spaceship created in photoshop",
+    //     techStack: ["Photoshop", "Affinity Designer"],
+    //   },
     {
         name: "NJ TETN LinkedIn Advertisement - NJ Department of Labor",
         images: [
