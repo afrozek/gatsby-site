@@ -1,14 +1,13 @@
 import React from "react";
 import Layout from "../components/layout"
-import notecorner from '../images/notecornerdemo.gif';
-import noteTaker from '../images/notetaker.gif';
-import budgetManager from '../images/budgetManager.gif';
-import lanternLogin from '../images/lantern-guides-login.png';
-import lanternDashboard from '../images/lantern-guides-dashboard.svg'
-import sogCreateOrbit from '../images/sog-create-orbit.gif';
-import sogCreateVolume from '../images/sog-create-volume.gif';
-import tetnBrochure from '../images/tetnBrochure.png';
-import tetnAd from '../images/tetnAd.png';
+import notecorner from '../images/portfolio/notecorner/notecornerdemo.gif';
+import budgetManager from '../images/portfolio/budgetmanager/budgetManager.gif';
+import lanternLogin from '../images/portfolio/lantern/lantern-guides-login.png';
+import lanternDashboard from '../images/portfolio/lantern/lantern-guides-dashboard.svg'
+import sogCreateOrbit from '../images/portfolio/sog/sog-create-orbit.gif';
+import sogCreateVolume from '../images/portfolio/sog/sog-create-volume.gif';
+import tetnBrochure from '../images/portfolio/tetn/tetnBrochure.png';
+import tetnAd from '../images/portfolio/tetn/tetnAd.png';
 
 import SEO from "../components/seo";
 import { SRLWrapper } from "simple-react-lightbox";
@@ -47,12 +46,6 @@ export default () => {
             images: [notecorner],
             description: "App similar to Evernote for note taking. Main differences is that you can have multiple tabs and a grid layout. ",
             techStack: ['NodeJS', 'ExpressJS', 'Mongoose ORM', 'MongoDB','Angular 1.5', 'Bootstrap 3']
-        },
-        {            
-            name: "Note Taker",
-            images: [noteTaker],
-            description: "Wanted to make something like Google Keep and Trello for practice, unique thing about this app is that you can drag and drop from mobile devices thanks to the touchpunch library. You can also save your notes to retrieve them later.",
-            techStack: ['NodeJS', 'ExpressJS', 'Mongoose ORM', 'MongoDB','Angular 1.5', 'Bootstrap 3', 'Touch Punch JS']
         },
         {            
             name: "NJ TETN Brochure - NJ Department of Labor",
